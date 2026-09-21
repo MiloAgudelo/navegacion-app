@@ -1,4 +1,4 @@
-﻿@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/preflight.css" layer(base);
 @import "tailwindcss/utilities.css";
 
@@ -10,6 +10,10 @@
   --color-secondary-100: #c51297;
   --color-secondary-200: #831266;
   --color-tertiary: #ef2967;
+
+  --font-work-black: "WorkSans-Black";
+  --font-work-light: "WorkSans-Light";
+  --font-work-medium-italic: "WorkSans-MediumItalic";
 }
 
 :root {

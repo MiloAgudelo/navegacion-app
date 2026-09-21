@@ -1,4 +1,4 @@
-﻿{
+{
   "expo": {
     "name": "navegacion-app",
     "slug": "navegacion-app",
@@ -25,6 +25,16 @@
     },
     "plugins": [
       "expo-router",
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/WorkSans-Black.ttf",
+            "./assets/fonts/WorkSans-Light.ttf",
+            "./assets/fonts/WorkSans-MediumItalic.ttf"
+          ]
+        }
+      ],
       [
         "expo-splash-screen",
         {
