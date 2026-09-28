@@ -16,7 +16,7 @@ module.exports = {
       fontFamily: {
         "work-black": ["WorkSans-Black"],
         "work-light": ["WorkSans-Light"],
-        "work-medium": ["WorkSans-Medium"],
+        "work-medium": ["WorkSans-MediumItalic"],
       },
     },
   },

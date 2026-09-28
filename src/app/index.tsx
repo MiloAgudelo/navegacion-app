@@ -1,9 +1,7 @@
-import { View, Text } from "react-native";
+import { Redirect } from 'expo-router';
 
-export default function App() {
-  return (
-    <View className="flex-1 items-center justify-center bg-white">
-      <Text className="text-xl font-bold text-blue-500">Hola Mundo</Text>
-    </View>
-  );
-}
+const App = () => {
+  return <Redirect href="/home" />;
+};
+
+export default App;
