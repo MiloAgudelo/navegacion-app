@@ -22,16 +22,6 @@ const DrawerLayout = () => {
             }}
             />
 
-            <Drawer.Screen name="user/index"
-            options={{
-                drawerLabel: "User",
-                title: "Usuario",
-                drawerIcon: ({color, size}) => (
-                    <Ionicons name="person-circle-outline" size={size} color={color}></Ionicons>
-                )
-            }}
-            />
-
             <Drawer.Screen 
             name="user/index"
             options={{
