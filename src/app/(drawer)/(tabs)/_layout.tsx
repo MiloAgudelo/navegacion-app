@@ -23,7 +23,17 @@ const TabsLayout = () => {
           ),
         }}
       />
+      <Tabs.Screen
+        name="cart/index"
+        options={{
+          title: "Carrito",
+          tabBarIcon: ({ color }) => (
+            <Ionicons size={28} name="cart" color={color} />
+          ),
+        }}
+      />
     </Tabs>
+    
   );
 };
 

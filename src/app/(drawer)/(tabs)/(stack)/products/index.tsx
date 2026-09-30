@@ -1,6 +1,7 @@
 import { View, Text, FlatList } from 'react-native';
 import { products } from '@/store/products.store';
 import { Link } from 'expo-router';
+import { Ionicons } from '@expo/vector-icons';
 
 const ProductsScreen = () => {
   return (
@@ -21,6 +22,15 @@ const ProductsScreen = () => {
               >
                 Ver detalles
               </Link>
+              <Ionicons
+              name="add"
+              size={24}
+              color="#000"
+              onPress={() => {
+                // agregar al carrito
+                console.log("Agregar:", item.id);
+              }}
+            />
             </View>
           </View>
         )}
