@@ -1,14 +1,12 @@
-import { Stack, useNavigation } from 'expo-router';
+import { Stack, router, useNavigation } from 'expo-router';
 import {Ionicons} from "@expo/vector-icons";
-import { canGoBack } from 'expo-router/build/global-state/router';
 
 const StackLayout = () => {
-  const navigation = useNavigation();
   const drawerNavigation = useNavigation() as any;
 
   const onHeaderLeftClick = (canGoBack?: boolean) => {
     if (canGoBack){
-      navigation.goBack();
+      router.back();
       return;
     }
 
@@ -31,9 +29,8 @@ const StackLayout = () => {
     >
       <Stack.Screen name="home/index" options={{ title: 'Inicio' }} />
       <Stack.Screen name="products/index" options={{ title: 'Productos' }} />
-      {/* <Stack.Screen name="products/[id]" options={{ title: 'Producto' }} /> */}
-      {/* <Stack.Screen name="profile/index" options={{ title: 'Perfil' }} /> */}
-      <Stack.Screen name="settings/index" options={{ title: 'Ajustes' }} />
+      <Stack.Screen name="profile/index" options={{ title: 'Perfil' }} />
+      <Stack.Screen name="settings/index" options={{ title: 'Ajustes Pantalla' }} />
     </Stack>
   );
 };

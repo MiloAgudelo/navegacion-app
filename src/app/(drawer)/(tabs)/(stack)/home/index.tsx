@@ -4,7 +4,7 @@ import { View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 const HomeScreen = () => {
-  const drawerNavigation = useNavigation("/(drawer)");
+  const drawerNavigation = useNavigation("/(drawer)") as any;
   return (
     <SafeAreaView>
       <View className="px-10 mt-5">
